@@ -1,0 +1,39 @@
+<!-- Tugas 40 Javascript -->
+<!-- Muhammad Rizwan -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+        <meta charset="utf-8" />
+        <title>Belajar Javascript - NIOMIC</title>
+ </head>
+ <body>
+        <button type="button" onclick="tugas40()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Base URI</b> Property : <br />
+        <p id="base">contoh</p>
+        <hr />
+        <b>Body</b> Property : <br />
+        <p id="body">contoh</p>
+        <hr />
+        <b>Create</b> Element : <br /><br />
+
+        <script type="text/javascript">
+            function tugas40() {
+                // Base URI
+                var base = document.baseURI;
+                document.getElementById("base").innerHTML = base;
+
+                // Body
+                document.getElementById("body").innerHTML = "color : green";
+                document.body.style.backgroundColor = "green";
+
+                // Create
+                var create = document.createElement("input");
+                document.body.appendChild(create);
+            }
+        </script>
+ </body>
+</html
